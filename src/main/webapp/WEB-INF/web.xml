@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+        http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <servlet>
+        <servlet-name>ItemController</servlet-name>
+        <servlet-class>ru.job4j.hiber.controller.ItemController</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemController</servlet-name>
+        <url-pattern>/items</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemAddController</servlet-name>
+        <servlet-class>ru.job4j.hiber.controller.ItemAddController</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemAddController</servlet-name>
+        <url-pattern>/items/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemUpdateController</servlet-name>
+        <servlet-class>ru.job4j.hiber.controller.ItemUpdateController</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemUpdateController</servlet-name>
+        <url-pattern>/items/update</url-pattern>
+    </servlet-mapping>
+
+</web-app>
